@@ -1,0 +1,192 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background: rgb(72, 72, 154);
+	overflow-x: hidden;
+}
+header{
+	padding: 20px 100px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.1em;
+}
+
+.cl-effect-19 a {
+	line-height: 1.5em;
+	margin: 15px;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	perspective: 800px;
+	width: 200px;
+}
+
+.cl-effect-19 a span {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding: 0 14px;
+	background: #f0e924;
+	-webkit-transition: -webkit-transform 0.4s, background 0.4s;
+	-moz-transition: -moz-transform 0.4s, background 0.4s;
+	transition: transform 0.4s, background 0.4s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% -100px;
+	-moz-transform-origin: 50% 50% -100px;
+	transform-origin: 50% 50% -100px;
+}
+
+.csstransforms3d .cl-effect-19 a span::before {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: #b53a2d;
+	content: attr(data-hover);
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	transition: background 0.4s;
+	-webkit-transform: rotateY(90deg);
+	-moz-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	-webkit-transform-origin: 0 50%;
+	-moz-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	pointer-events: none;
+}
+
+.cl-effect-19 a:hover span,
+.cl-effect-19 a:focus span {
+	background: #000000;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+}
+section{
+    min-height: 100vh;
+    padding: 2rem 9% 2rem;
+}
+/*Sobre css*/
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img img{
+    width: 25vw;
+	filter: drop-shadow(.5rem .5rem 1rem #f0e924);
+    border-radius: 30%;
+}
+.home span{
+    color: #f0e924;
+}
+.home-content h1{
+    font-size: 4em;
+    font-weight: 700;
+    
+	color: rgb(47, 103, 199);
+}
+.home-content p{
+    font-size: 25px;
+	color: #000000;
+	margin-top: 20px;
+    
+}
+.sobre{
+   
+    align-items: center;
+   
+    background: #2f177f;
+}
+.sobre-img img{
+    width: 35vw;
+    box-shadow: 0 0 1rem black;
+    border-radius: 40%;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+
+.sobre-content p{
+	color: #fff;
+    font-size: 30px;
+    margin: 2rem 0 3rem;
+}
+/*Personagens css*/
+
+section .personagens{
+    min-height: 100vh;
+    padding: 2rem 1% 2rem;
+}
+
+.content{
+	color: #fff;
+	font-size: 1.5em;
+}
+footer{
+    align-items: center;
+    padding: 2rem 9%;
+    background: black;
+	color: #fff;
+}
+.personagens-container{
+    
+    align-items: center;
+    
+}
+.personagens-box img{
+	width: 200px;
+}
+.personagens-container .personagens-box{
+   
+    background: #b53e3e;
+    padding: 3rem 1rem 4rem;
+    border-radius: 2rem;
+	margin-left: 20px;
+    text-align: center;
+    border: .2rem solid rgb(0, 0, 0) ;
+	margin-top: 50px;
+}
+.personagens h2{
+	color: #fff;
+	margin-bottom: 100px;
+}
+.personagens-box h3{
+    font-size: 2.6rem;
+}
+.personagens-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+	color: black;
+}
+.content{
+	margin-top: 40px;
+	color: #fff;
+	font-size: 1.5em;
+}
